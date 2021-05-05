@@ -1,0 +1,26 @@
+.contact-content{
+height: 100vh;
+    
+margin-top: 25px;
+padding: 9px;
+position:relative;
+overflow: hidden;
+}
+.contact-content::after{
+    content:"";
+background-image: url('../newprog/bg1.jpg');
+position:absolute;
+top: 0;
+width: 100%;
+height: inherit;
+opacity: 0.15;
+z-index: -1;
+
+}
+.home-articles{
+    background-color: inherit;
+    padding: 5px;
+    margin-top: 10px;
+}
+.contact-form{
+}

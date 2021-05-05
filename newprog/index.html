@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  <form>
+    <h1>Login</h1>
+    <p> <input id="username" placeholder="Enter username"></p>
+    <p><input id="password" placeholder="Enter password"></p>
+    <p><input id="gscptRegno"
+              placeholder="Enter gscpt no."></p>
+    <button type="button" onclick="getInfo()" > Click me</button>
+  </form>
+  <script>
+  var ObjPeople = [
+  {
+    username: "Vaibhavi",
+    password: "hrishit",
+    gscptRegno:'555666'
+    
+  },
+  {
+    username: "Hrishit",
+    password: "vaibhavi",
+     gscptRegno:'555666'
+    
+  }
+]
+
+function getInfo(){
+  var username = document.getElementById("username").value
+  var password = document.getElementById("password").value
+  var gscptRegno = 
+      document.getElementById("gscptRegno").value
+  
+  for(i=0; i<ObjPeople.length; i++){
+    if(username==ObjPeople[i].username && password==ObjPeople[i].password && gscptRegno==ObjPeople[i].gscptRegno){
+        function myOnclick(){
+            document.location.href="Home.html";
+        }
+        onclick=myOnclick();
+       console.log(username + " is logged in!");
+      return
+    }
+   
+    }
+      console.log("Incorrect username or password or gscpt reg no!");
+  
+  }
+     
+  
+
+  </script>
+  
+</body>
+</html>

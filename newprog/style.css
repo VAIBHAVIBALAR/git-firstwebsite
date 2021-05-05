@@ -1,0 +1,14 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-content: end;
+  margin-top: 15%;
+  background-color:#C3E0E5;
+  border: 10px solid coral;
+  animation: mymove 5s infinite;
+  padding-bottom: 20px;
+}
+  @keyframes mymove {
+  50% {border-color: lightblue;}
+}
+  
